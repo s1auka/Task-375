@@ -22,9 +22,7 @@ function getMatrixElement(maxElementByModule) {
 }
 
 function createMatrix([size1, size2], maxElem) {
-	let matrix ;
-
-	matrix = Array(size1).fill().map(() => Array.from({length: size2}, () => getMatrixElement(maxElem)));
+	let matrix = Array(size1).fill().map(() => Array.from({length: size2}, () => getMatrixElement(maxElem)));
 
 	return matrix;
 }
